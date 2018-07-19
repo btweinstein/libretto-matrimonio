@@ -17,7 +17,7 @@
 
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{fontspec}
-%\usepackage{dashrule}
+\usepackage{dashrule}
 \usepackage{tabularx}
 \usepackage{pbox}
 \usepackage{tabu}
@@ -66,7 +66,7 @@
 \newcommand{\psep}{\bigskip{\fontspec{wmdividers1.TTF}p}\bigskip}
 
 \newcommand{\songlisting}[2]{\textit{#1}\hdashrule{\fill}{1pt}{1pt}#2\\}
-\newcommand{\reading}[1]{#1}
+\newcommand{\reading}[2]{#1\hdashrule{\fill}{1pt}{1pt}#2}
 \newcommand{\readingquote}[1]{
 \begin{quote}
 ``\textit{#1}''
@@ -190,6 +190,8 @@ Wood-Ridge, NJ}
 
 \note{It is our hope that you will join us in participating ``in full heart and voice,'' using this program as a guide for our music selections and the responses from the newest (third) edition of the Roman Missal.}
 
+}
+
 \newpage
 
 
@@ -199,8 +201,46 @@ Wood-Ridge, NJ}
 
 \masssubpart{Processional}
 
-%\songlisting{Canon in D}{Pachelbel}\\
-%\songlisting{Cello Suite No. 1, adapted for organ}{Bach}
+\songlisting{Canon in D}{Pachelbel}
+\songlisting{Cello Suite No. 1, adapted for organ}{Bach}
+
+
+\masssubpart{Greeting}
+
+\masssubpart{Gloria}
+
+\masssubpart{Opening Prayer}
+
+\masspart{Liturgy of the Word}
+
+\masssubpart{First Reading (please be seated)}
+
+\reading{Tobit 8:4b--8}{Jane Smith}
+\readingquote{Call down your mercy on me and on her, and allow us to live together to a happy old age.}
+
+
+\masssubpart{Responsorial Psalm}
+
+\masssubpart{Second Reading}
+
+\reading{Philippians 4:4--9}{Jane Smith}
+\readingquote{Rejoice in the Lord always. I shall say it again: rejoice!}
+
+
+\masssubpart{Gospel Acclamation (please stand)}
+
+\reading{Matthew 5:1--12a}{Fr. John Smith}
+\readingquote{Blessed are the poor in spirit, for theirs is the kingdom of heaven.}
+
+\masssubpart{Homily (please be seated)}
+
+
+
+
+
+
+
+
 
 
 \masspart{Riti di Introduzione}
