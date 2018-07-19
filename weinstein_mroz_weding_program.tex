@@ -39,7 +39,7 @@
 
 \newcommand{\hone}[1]{{\centering \Huge\scshape #1
 
-\medskip
+\bigskip
 
 }}
 
@@ -64,7 +64,13 @@
 \newcommand{\psep}{\bigskip{\fontspec{wmdividers1.TTF}p}\bigskip}
 
 \newcommand{\songlisting}[2]{\textit{#1}\hdashrule{\fill}{1pt}{1pt}#2}
-\newcommand{\reading}[2]{#1\hdashrule{\fill}{1pt}{1pt}#2}
+
+\newcommand{\reading}[1]{\textit{#1}}
+
+\newcommand{\readingpart}[2]{\masssubpart{#1} \\ \reading{#2}}
+
+\newcommand{\songpart}[3]{\masssubpart{#1} \\ \songlisting{#2}{#3}}
+
 \newcommand{\readingquote}[1]{
 \begin{quote}
 ``\textit{#1}''
@@ -169,24 +175,28 @@ Wood-Ridge, NJ}
 \partyname{Father Richard Mucowski, OFM}
 \medskip
 
-    \partytitle{Lectors}\linebreak
-    \partyline{Fred Weinstein}{Grandfather of Groom}\linebreak
-    \partyline{MaryAnn Hinsdale, IHM}{Bride's PhD Advisor}
-    \medskip
+\partytitle{Deacon}\linebreak
+\partyname{Francis Materia}
+\medskip
 
-    \partytitle{Petitioners \& Gift Bearers}\linebreak
-    \partyline{Googlie}{Friend of the Bride}\linebreak
+\partytitle{Lectors}\linebreak
+\partyline{Fred Weinstein}{Grandfather of Groom}\linebreak
+\partyline{MaryAnn Hinsdale, IHM}{Bride's PhD Advisor}
+\medskip
 
-    \medskip
+\partytitle{Petitioners \& Gift Bearers}\linebreak
+\partyline{Googlie}{Friend of the Bride}
+\medskip
 
-    \partytitle{Musicians}\linebreak
-    \partyname{Gabriel Valle}\linebreak
-    \partyline{Matthew Windels}{Ramily of Bride}\linebreak
-    \partyline{Lena Gabrielle}{Cousin of Groom}
+\partytitle{Musicians}\linebreak
+\partyname{Gabriel Valle}\linebreak
+\partyline{Anthony Mroz}{Father of Bride}\linebreak
+\partyline{Matthew Windels}{Ramily of Bride}\linebreak
+\partyline{Lena Gabrielle}{Cousin of Groom}
 
 \psep
 
-\note{It is our hope that you will join us in participating ``in full heart and voice,'' using this program as a guide for our music selections and the responses from the newest (third) edition of the Roman Missal.}
+%\note{It is our hope that you will join us in participating ``in full heart and voice,'' using this program as a guide for our music selections and the responses from the newest (third) edition of the Roman Missal.}
 
 }
 
@@ -197,8 +207,7 @@ Wood-Ridge, NJ}
 
 \masspart{Entrance Rite}
 
-\masssubpart{Processional}
-
+\masssubpart{Processional}\\
 \songlisting{Canon in D}{Pachelbel}\\
 \songlisting{Floobo's melody}{Floobo}
 
@@ -210,29 +219,24 @@ Wood-Ridge, NJ}
 
 \masspart{Liturgy of the Word}
 
-\masssubpart{First Reading}
+\readingpart{First Reading}{Ruth 1:16--17}
 
-\reading{Ruth 1:16--17}{}
 %\readingquote{Call down your mercy on me and on her, and allow us to live together to a happy old age.}
 
 
 \masssubpart{Responsorial Psalm}
 
-\masssubpart{Second Reading}
+\readingpart{Second Reading}{1 Corinthians 12:31--13:8a}
 
-\reading{1 Corinthians 12:31--13:8a}{}
 %\readingquote{Rejoice in the Lord always. I shall say it again: rejoice!}
 
+\readingpart{Gospel Acclamation}{John 2:1--11}
 
-\masssubpart{Gospel Acclamation}
-
-%\songlisting{Celtic Alleluia}{Matthew Windels}
-
-\reading{John 2:1--11}{Father Mark Massa, SJ}
 %\readingquote{Blessed are the poor in spirit, for theirs is the kingdom of heaven.}
 
 \masssubpart{Homily}
 
+\newpage
 \masspart{Rite of Marriage}
 
 \masssubpart{Statement of Intentions}
@@ -249,9 +253,7 @@ Wood-Ridge, NJ}
 
 %\note{In the Liturgy of the Eucharist, we prepare and receive the Sacrament of Holy Communion in the sharing of consecrated bread and wine, at the command of Jesus Christ in his Last Supper.}
 
-\masssubpart{Presentation and Preparation of the Gifts}
-
-\songlisting{Make me a Channel of Your Peace}{Floobo}
+\songpart{Presentation and Preparation of the Gifts}{Make me a Channel of Your Peace}{Floobo}
 
 \masssubpart{Prayer over the Gifts}
 
@@ -262,31 +264,23 @@ Wood-Ridge, NJ}
 
 \masssubpart{Lamb of God}
 
+%\readingpart{Communion}{God Beyond All Names}
 
-\masssubpart{Communion}
+\songpart{Communion}{God Beyond All Names}{Floobo}
 
-%\note{We invite all non-Catholics to come forward during Communion with arms crossed across their chest to receive a blessing.}
-
-\songlisting{God Beyond All Names}{Floobo}
-
-\masssubpart{Marian Devotion}
-
-%\note{The bride and groom ask for the Virgin Mary's blessing by offering a bouquet of flowers at a shrine near the altar and asking her to pray for their strong and happy marriage.}
-
-\songlisting{Ave Maria}{Floobo}
+\songpart{Marian Devotion}{Ave Maria}{Floobo}
 
 \masssubpart{Closing Prayer and Final Blessing}
 
-\masssubpart{Recessional}
+\songpart{Recessional}{Trumpet Voluntary}{J. Clarke}
 
-\songlisting{Trumpet Voluntary}{J. Clarke}
 
-%\newpage
-%\null
+\newpage
+\null
 \vfill
 
 \center{
-Produced with \LaTeX.
+Produced with \LaTeX
 }
 
 \end{document}
