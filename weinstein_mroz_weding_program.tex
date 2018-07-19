@@ -43,11 +43,11 @@
 
 }}
 
-\newcommand{\htwo}[1]{{\Large\scshape #1}}
-\newcommand{\masspart}[1]{\bigskip
+\newcommand{\htwo}[1]{{\LARGE\scshape #1}}
+\newcommand{\masspart}[1]{\bigskip \htwo{#1}}
 
-  \htwo{#1}}
-\newcommand{\masssubpart}[1]{\bigskip{\scshape #1}}
+\newcommand{\masssubpart}[1]{\medskip{\scshape #1}}
+
 \newcommand{\marriagepart}[1]{{\large\scshape #1}}
 \newcommand{\note}[1]{{\centering \textit{#1}}}
 \newcommand{\sayline}[2]{
@@ -63,7 +63,7 @@
 \newcommand{\linesep}{\raisebox{1.1pt}{\fontsize{4pt}{4.8pt}\fontspec{wmdividers1.TTF}p}} % other good letters: r, s, P, y, N
 \newcommand{\psep}{\bigskip{\fontspec{wmdividers1.TTF}p}\bigskip}
 
-\newcommand{\songlisting}[2]{\textit{#1}\hdashrule{\fill}{1pt}{1pt}#2\\}
+\newcommand{\songlisting}[2]{\textit{#1}\hdashrule{\fill}{1pt}{1pt}#2}
 \newcommand{\reading}[2]{#1\hdashrule{\fill}{1pt}{1pt}#2}
 \newcommand{\readingquote}[1]{
 \begin{quote}
@@ -199,9 +199,8 @@ Wood-Ridge, NJ}
 
 \masssubpart{Processional}
 
-\songlisting{Canon in D}{Pachelbel}
+\songlisting{Canon in D}{Pachelbel}\\
 \songlisting{Floobo's melody}{Floobo}
-
 
 \masssubpart{Greeting}
 
@@ -211,7 +210,7 @@ Wood-Ridge, NJ}
 
 \masspart{Liturgy of the Word}
 
-\masssubpart{First Reading (please be seated)}
+\masssubpart{First Reading}
 
 \reading{Ruth 1:16--17}{Fred Weinstein}
 %\readingquote{Call down your mercy on me and on her, and allow us to live together to a happy old age.}
@@ -235,18 +234,17 @@ Wood-Ridge, NJ}
 \masssubpart{Homily}
 
 \begin{center}\psep\end{center}
+%\smallskip
 \begin{center}
-
-\masspart{Rite of Marriage}
-
-\smallskip
-%\begin{center}
+\masspart{Rite of Marriage}\\
+\end{center}
+\begin{center}
 \marriagepart{Prayer over the Couple}\\
 \marriagepart{Statement of Intentions}\\
 \marriagepart{Consent and Exchange of Vows}\\
 \marriagepart{Blessing and Exchange of Rings}
 \end{center}
-\smallskip
+%\smallskip
 \begin{center}\psep\end{center}
 
 
