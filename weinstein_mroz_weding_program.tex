@@ -78,6 +78,12 @@
 }
 \newenvironment{keeptogether}{\begin{minipage}{\textwidth}}{\end{minipage}}
 
+% Kate's silly ramily thing
+\newcommand{\Ramily}{Ramily* }
+
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 \begin{document}
 
 % Shows the page layouts, with measurements and all
@@ -141,16 +147,16 @@ Wood-Ridge, NJ}
   %\\ \noalign{\bigskip}
   
   \partytitle{Maids of Honor}\linebreak
-  \partyline{Dorie Goehring}{Ramily of Bride}\linebreak
+  \partyline{Dorie Goehring}{\Ramily of Bride}\linebreak
   \partyline{Renee Weinstein}{Sister of Groom}
 
     \bigskip
 
     \partytitle{Bridesmaids}\linebreak
     \partyname{Marina Font \linesep{} Friend of Bride}\linebreak
-    \partyname{Robin McNamara \linesep{} Ramily of Bride}\linebreak
+    \partyname{Robin McNamara \linesep{} \Ramily of Bride}\linebreak
     \partyname{Christina Paventa \linesep{} Friend of Bride}\linebreak
-    \partyname{Jana Trenk \linesep{} Ramily of Bride}
+    \partyname{Jana Trenk \linesep{} \Ramily of Bride}
   &
   %\centering
     \partytitle{Best Man}\linebreak 
@@ -191,13 +197,23 @@ Wood-Ridge, NJ}
 \partytitle{Musicians}\linebreak
 \partyname{Gabriel Valle}\linebreak
 \partyline{Anthony Mroz}{Father of Bride}\linebreak
-\partyline{Matthew Windels}{Ramily of Bride}\linebreak
+\partyline{Matthew Windels}{\Ramily of Bride}\linebreak
 \partyline{Lena Gabrielle}{Cousin of Groom}
 
 \psep
 
 %\note{It is our hope that you will join us in participating ``in full heart and voice,'' using this program as a guide for our music selections and the responses from the newest (third) edition of the Roman Missal.}
 
+}
+
+%\footnote[1]{Ramily: Someone who attended Fordham University with the Bride}
+
+\null
+\vfill
+
+\center{
+\hrulefill \\
+\small{* Ramily: Someone who attended Fordham University with the Bride}
 }
 
 \newpage
@@ -230,7 +246,9 @@ Wood-Ridge, NJ}
 
 %\readingquote{Rejoice in the Lord always. I shall say it again: rejoice!}
 
-\readingpart{Gospel Acclamation}{John 2:1--11}
+\masssubpart{Gospel Acclamation}\\
+\songlisting{Celtic Alleluia}{Fintan O'Carroll \& Christopher Walker}\\
+\reading{John 2:1--11}
 
 %\readingquote{Blessed are the poor in spirit, for theirs is the kingdom of heaven.}
 
